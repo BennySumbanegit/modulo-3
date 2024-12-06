@@ -27,6 +27,7 @@ header{
     background-color: black;
     color: white;
     text-align: center;
+    font-size: 4vh;          /* a uma tela menor a fonte diminui  o tamanho */
 }
 
 header>h1{
@@ -37,6 +38,7 @@ header>h1{
 
 header>p{
     padding-bottom: 50px;
+    font-size: 0.5em;
 }
 
 header a ,
@@ -54,25 +56,46 @@ header a:hover{
                 /* CONFIGURANDO O SECTION */
 
 section{
+    font-family: var(--fonte3);
+    font-size: 3vh;               /* a uma tela menor a fonte diminui o tamanho */
     padding-top: 10vh;
     padding-bottom: 10vh;
-    line-height: 2em;     /* o espaçamento entre as linhas*/
+    line-height: 2em;            /* o espaçamento entre as linhas*/
     padding-left: 50px;
 } 
-
+section>P{
+    margin-TOP: 20px;
+}
 section.normal{
-    background-color: rgb(172, 168, 168);
+    background-color: bisque;
     color: black;
 }
 
 section.imagen{
     background-color: black;
+    background-attachment: fixed;        /*  fixa a imagen na tela fica muito lindo */
     color: white;
+    box-shadow: inset 6px 6px 6px 0px rgb(109, 98, 84) ;  /*  a sombra sera para dentro da img */
+
 }
 
 section.imagen p{
-    background-color: rgb(172, 168, 168 );
-    width: 360px;
+    background-color: rgba(68, 67, 67, 0.753);
+    display: inline-block;                      /*  o display vai fazer com que o texto se adapte a o coteudo */
+    padding: 10px;
+    border-radius: 20px;
+    text-shadow: 1px 2px 0px rgb(221, 151, 66);
+}
+       /*  configurando as imagens */
+section#imagen01{
+    background-image: url("../imagens/pexels-katie-barget-2051441968-29626986.jpg");
+    background-position: center center;
+    background-size: cover;
+}
+section#imagen02{
+    background-image: url("../imagens/pexels-elina-araja-1743227-3309967.jpg");
+    background-size: cover;
+    background-position: right center;
 }
 
          /* CONFIGURANDO O FOOTER */
@@ -81,4 +104,6 @@ footer{
     background-color: black;
     padding: 10px;
     color: white;
+    font-size: 0.7em;
+    
 }
