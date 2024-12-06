@@ -1,0 +1,77 @@
+@charset "UTF-8";
+            /* primeira fonte */
+@import url('https://fonts.googleapis.com/css2?family=Joti+One&family=Sriracha&display=swap');
+            /* segunda fonte  */
+@import url('https://fonts.googleapis.com/css2?family=Joti+One&display=swap');
+
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+html ,body{
+    min-height: 100vh;             /*  altura do html e o corpo */
+    background-color: bisque;
+}
+
+            /* CONFIGURANDO O HEADER */
+
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header>h1{
+    padding-top: 50px;
+    font-variant: small-caps;    /* todas letras maiusculas sendo maior as primeiras */
+}
+
+header>p{
+    padding-bottom: 50px;
+}
+
+header a ,
+footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover ,
+header a:hover{
+    text-decoration: underline;
+}
+
+                /* CONFIGURANDO O SECTION */
+
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;     /* o espaçamento entre as linhas*/
+    padding-left: 50px;
+} 
+
+section.normal{
+    background-color: rgb(172, 168, 168);
+    color: black;
+}
+
+section.imagen{
+    background-color: black;
+    color: white;
+}
+
+section.imagen p{
+    background-color: rgb(172, 168, 168 );
+    width: 360px;
+}
+
+         /* CONFIGURANDO O FOOTER */
+         
+footer{
+    background-color: black;
+    padding: 10px;
+    color: white;
+}
